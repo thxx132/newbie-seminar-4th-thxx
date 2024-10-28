@@ -1,0 +1,84 @@
+/* 기본 스타일 설정 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* 계산기와 유저 관리 영역 스타일 */
+#calculator, #user-manager {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* 입력 필드 스타일 */
+input[type="number"], input[type="text"], select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* 버튼 스타일 */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* 테이블 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* 메시지 표시 스타일 */
+#user-message {
+  margin-top: 10px;
+  color: #4CAF50;
+  text-align: center;
+}
+
+/* 신뢰도 점수 영역 */
+#trust-score {
+  font-weight: bold;
+  margin: 0 10px;
+}

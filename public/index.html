@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>계산기 + 유저 관리</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>계산기 + 유저 관리</h1>
+
+  <!-- Calculator Section -->
+  <div id="calculator">
+    <h2>Arithmetic</h2>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <select id="operation">
+      <option value="add">Add</option>
+      <option value="sub">Subtract</option>
+      <option value="mul">Multiply</option>
+      <option value="div">Divide</option>
+    </select>
+    <button onclick="calculate()">Calculate</button>
+    <p>Result: <span id="calc-result"></span></p>
+  </div>
+
+  <!-- User Manager Section -->
+  <div id="user-manager">
+    <h2>Users</h2>
+    <input type="text" id="userName" placeholder="Enter user name">
+    <input type="text" id="userId" placeholder="Enter user ID">
+    <button onclick="saveUser()">Save User</button>
+
+    <p id="user-message"></p>
+
+    <!-- 사용자 목록 테이블 -->
+    <table id="user-table" border="1" style="width: 100%; text-align: center; margin-top: 10px;">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>ID</th>
+          <th>Trust Score</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 사용자 정보가 여기에 동적으로 추가됩니다 -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
